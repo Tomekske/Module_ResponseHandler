@@ -20,8 +20,8 @@ from ResponseHandler import Response
 ##
 class TestCoreFunctions(unittest.TestCase):
 	def setUp(self):
-		self.url_valid = 'http://api.openweathermap.org/data/2.5/weather?q=Merchtem&APPID=9f5834ee3f9f42f1671bc72b4626f9e7&units=metric'
-		self.url_invalid = 'http://api.openwegfgathermap.org/data/2.5/weather?q=Merchtem&APPID=9f5834ee3f9f42f1671bc72b4626f9e7&units=metric'
+		self.url_valid = 'https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699'
+		self.url_invalid = 'https://www.googbhbjhleapis.com/books/v1/volumes?q=isbn:0747532699'
 
 
 

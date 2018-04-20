@@ -11,7 +11,6 @@
 
 
 import requests #http request libray
-import configparser #parse data from a config file
 import json
 import httplib2
 
