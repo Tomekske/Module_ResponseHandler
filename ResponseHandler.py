@@ -58,5 +58,4 @@ class Response():
 			decodeRaw = raw.content.decode("utf-8") #get content from webpage and decode bytes,replace "" with `` and convert them to a string
 			jsonData = json.loads(decodeRaw) #convert JSON string to a JSON object
 			return jsonData
-		else:
-			return 'RAW_QUERRY_ERROR'
+		return 'RAW_QUERRY_ERROR'
