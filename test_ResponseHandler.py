@@ -38,14 +38,14 @@ class TestCoreFunctions(unittest.TestCase):
 
 
 	##
-	## @brief     Method to determintate wether querry is valid or invallid
+	## @brief     Method to determintate wether query is valid or invallid
 	##
-	def test_querry(self):
+	def test_query(self):
 		r_valid = Response(self.url_valid)
 		r_invalid = Response(self.url_invalid)
 
-		self.assertNotEqual(r_valid.json, 'RAW_QUERRY_ERROR') #Querry is valid
-		self.assertEqual(r_invalid.json, 'RAW_QUERRY_ERROR') #Querry is invalid
+		self.assertNotEqual(r_valid.json, 'RAW_QUERY_ERROR') #Query is valid
+		self.assertEqual(r_invalid.json, 'RAW_QUERY_ERROR') #Query is invalid
 
 	
 

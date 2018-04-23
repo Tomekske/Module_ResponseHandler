@@ -26,7 +26,7 @@ class Response():
     ##
 	def __init__(self, url):
 		self.status = self.status(url)
-		self.json = self.querry(url,self.status)
+		self.json = self.query(url,self.status)
 
 
 
@@ -51,11 +51,11 @@ class Response():
     ## @param      status The status code which is tested in te status function
     ## @return     JSON response or error message
     ##  
-	def querry(self,url,status):
+	def query(self,url,status):
 		#if URL exsist get data from the server and return it. Else return error string
 		if status == True:
 			raw = requests.get(url)
 			decodeRaw = raw.content.decode("utf-8") #get content from webpage and decode bytes,replace "" with `` and convert them to a string
 			jsonData = json.loads(decodeRaw) #convert JSON string to a JSON object
 			return jsonData
-		return 'RAW_QUERRY_ERROR'
+		return 'RAW_QUERY_ERROR'
