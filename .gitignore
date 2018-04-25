@@ -1,3 +1,4 @@
 *.pyc
 
 *.gitattributes
+*.ini
