@@ -59,3 +59,6 @@ class Response():
 			jsonData = json.loads(decodeRaw) #convert JSON string to a JSON object
 			return jsonData
 		return 'RAW_QUERY_ERROR'
+
+	def removeOption(self, section, option):
+		print(section, option)

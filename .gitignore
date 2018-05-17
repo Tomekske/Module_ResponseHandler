@@ -2,3 +2,7 @@
 
 *.gitattributes
 *.ini
+__pycache__
+build
+dist
+ResponseHandler.egg-info
